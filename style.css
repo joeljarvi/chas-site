@@ -1,0 +1,305 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Din Pro";
+}
+
+.top {
+  background-image: url(img/bg.webp);
+  background-size: cover;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  gap: 50px;
+  color: white;
+}
+.logo img {
+  width: 100px;
+}
+nav a {
+  margin: 10px;
+}
+.dropdown {
+  float: left;
+}
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px 10px;
+  background-color: inherit;
+  font-size: 1.2rem;
+}
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  text-decoration: underline solid white;
+  text-underline-offset: 10px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  margin-top: 10px;
+  padding: 30px;
+  border-radius: 30px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 1.2rem;
+}
+.dropdown-content a:hover {
+  color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+button {
+  font-family: "Din Pro";
+  padding: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 30px;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.apply {
+  color: white;
+  background-color: #4c64ff;
+  text-decoration: none;
+  border: solid #4c64ff 1px;
+}
+.apply a {
+  color: inherit;
+  background-color: transparent;
+  text-decoration: none;
+}
+.apply a:hover {
+  color: #4c64ff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.hero-section {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 100px;
+  padding-right: 50px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  gap: 20px;
+  height: 100vh;
+}
+.headline {
+  font-family: "din condensed";
+  font-size: 4rem;
+  line-height: 110%;
+  text-transform: uppercase;
+}
+.sub-headline {
+  font-family: "din condensed";
+  font-size: 1.2rem;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.sales-section {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 50px;
+  padding: 50px;
+}
+
+.content-image {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 1968px;
+  grid-column: span 6;
+}
+
+.sales-textcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: stretch;
+  grid-column: 7 / span 6;
+  gap: 20px;
+}
+
+.top-text {
+  color: #2b2f2f;
+  font-family: "Din Pro";
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.sales-headline {
+  color: #2b2f2f;
+  font-family: "din condensed";
+  font-size: 4rem;
+  line-height: 110%;
+  text-transform: uppercase;
+}
+.paragraph {
+  color: #2b2f2f;
+  font-family: "Din Pro";
+  font-size: 0.8rem;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.read-more {
+  color: #2b2f2f;
+  background-color: white;
+  border: solid #2b2f2f 1px;
+}
+.read-more a {
+  color: black;
+  text-decoration: none;
+}
+.read-more a:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+.apply-now {
+  color: white;
+  background-color: #2b2f2f;
+  border: solid #2b2f2f 1px;
+}
+.apply-now a {
+  color: white;
+  text-decoration: none;
+}
+.apply-now a:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+.student-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  background-color: #f8f9f9;
+}
+
+.student-container-headline {
+  font-family: "din condensed";
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.student-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px;
+  gap: 30px;
+}
+
+.student-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.student-img {
+  width: 300px;
+}
+
+.student-headline {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #2b2f2f;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  background-color: #6ec4e4;
+  padding: 30px;
+}
+.apply-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.apply-headline {
+  font-family: "din condensed";
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  text-align: left;
+  color: #2b2f2f;
+}
+
+ul {
+  font-family: "Din Pro";
+  font-size: 1rem;
+  list-style: none;
+}
+
+ul a {
+  color: #2b2f2f;
+  text-decoration: none;
+}
+
+ul a:hover {
+  color: #2b2f2f;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: stretch;
+  gap: 20px;
+}
+
+.footer-headline {
+  font-family: "Din Pro";
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: left;
+  color: #2b2f2f;
+}
+
+.footer-info {
+  font-family: "Din Pro";
+  font-size: 1rem;
+  text-align: left;
+  color: #2b2f2f;
+}
